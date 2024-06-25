@@ -44,7 +44,6 @@ def matesGetx(modelo):
     else:
         return jsonify({'error': 'Mate no encontrado', 'status': 'error'}), 404
 
-# Actualizar (Modificación)
 @app.route('/mates/<modelo>', methods=['PUT'])
 def updateMate(modelo):
     body = request.json
@@ -60,7 +59,6 @@ def updateMate(modelo):
     else:
         return jsonify({'error': 'Mate no encontrado', 'status': 'error'}), 404
 
-# Eliminar (Baja)
 @app.route('/mates/<modelo>', methods=['DELETE'])
 def deleteMate(modelo):
     global mates
