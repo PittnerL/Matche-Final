@@ -1,7 +1,7 @@
 import sqlite3
 from datetime import datetime
 
-conn = sqlite3.connect('Database Ventas.db')
+conn = sqlite3.connect('Database__Ventas.db')
 c = conn.cursor()
 
 c.execute('''CREATE TABLE IF NOT EXISTS Match_Ventas (
